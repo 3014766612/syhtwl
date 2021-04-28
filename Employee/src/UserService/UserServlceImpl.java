@@ -210,4 +210,13 @@ public class UserServlceImpl implements UserServices {
 		return false;
 	}
 
+	@Override
+	public int deletpt(int id) {
+		int num = this.ud.deletpt(id);
+		if (num > 1) {
+			return 0;
+		}
+		return 1;
+	}
+
 }

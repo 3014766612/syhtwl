@@ -29,6 +29,7 @@ public interface UserDaos {
 	public List<product> productseleall();
 	public int productcount();
 	
+	public int deletpt(int id);
 	 //É¾³ý
     public int deleted(int id);
     //ÐÞ¸Ä

@@ -571,4 +571,14 @@ public class UserDaoImpl extends Basedao implements UserDaos {
 		return this.getSIDU(sql, obj);
 	}
 
+	@Override
+	public int deletpt(int id) {
+		conn = this.getConnection();
+		String sql = "DELETE FROM product WHERE id=?";
+		// 2.提供替换?的object[]
+		Object[] obj = { id };
+		// 执行新增操作
+		return this.getSIDU(sql, obj);
+	}
+
 }

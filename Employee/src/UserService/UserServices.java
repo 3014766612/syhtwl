@@ -34,6 +34,7 @@ public interface UserServices {
 
 	public int productcount();
 	
+	public int deletpt(int id);
 	// É¾³ý
 	public int deleted(int id);
 

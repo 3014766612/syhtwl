@@ -178,14 +178,14 @@ layui.extend({
     //删除用户
     function delpt(id){
     	$.ajax({
-    		url:"ShanChu?action=delUser",
+    		url:"ptdelectservlet?action=deletpt",
     		data:{"id":id},
     		type:"post",
     		success:function(data){
     			alert(data)
     			if(data == 1){
     				layer.msg("删除成功")
-    				tableIns.reload("#newsList");
+    				tableIns.reload("#PtList");
     			}
     		}
     	})
